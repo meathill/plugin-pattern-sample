@@ -9,6 +9,7 @@ import flash.display.StageAlign;
 import flash.display.StageScaleMode;
 import flash.events.Event;
 
+[SWF(frameRate=30, width=640, height=400)]
 public class Main extends Sprite {
   private var info:MovieInfo;
   private var video:VideoBody;
@@ -18,9 +19,9 @@ public class Main extends Sprite {
     stage.scaleMode = StageScaleMode.NO_SCALE;
     stage.align = StageAlign.TOP_LEFT;
 
+    layout();
     info = new MovieInfo(loaderInfo.parameters)
     info.addEventListener(Event.COMPLETE, info_completeHandler);
-    layout();
   }
 
   private function info_completeHandler(event:Event):void {
@@ -31,7 +32,7 @@ public class Main extends Sprite {
     video = new VideoBody(640, 360);
     addChild(video);
 
-    control = new ControlBar();
+    control = new ControlBar(video);
     control.y = 360;
     addChild(control);
   }
