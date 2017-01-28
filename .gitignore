@@ -12,5 +12,8 @@ bin-release/
 # information for Eclipse / Flash Builder.
 html-template
 
-# assets
+# Assets
 video/
+
+# Repo
+node_modules/

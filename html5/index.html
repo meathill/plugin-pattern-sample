@@ -1,6 +1,9 @@
 <!doctype html>
 <head>
   <meta name="charset" content="utf-8">
+
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
   <style>
     video {
       background-color: #000
@@ -8,5 +11,11 @@
   </style>
 </head>
 <body>
-  <video width="800" height="400" src="../video/2017.mp4" controls>
+  <div id="container" class="container">
+    <video width="800" height="400" src="../video/2017.mp4"></video>
+    <nav class="navbar navbar-light bg-faded">
+      <div class="form-inline">
+        <button class="btn btn-secondary"><i class="fa fa-play"></i></button>
+      </div>
+    </nav>
 </body>

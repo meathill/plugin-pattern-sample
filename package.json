@@ -1,0 +1,20 @@
+{
+  "name": "plugin-patter-sample",
+  "version": "1.0.0",
+  "description": "《Web 前端中的插件模式开发》系列文章的配套代码",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "design patter",
+    "plugin",
+    "web front-end"
+  ],
+  "author": "Meathill <meathill@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "font-awesome": "^4.7.0"
+  }
+}
