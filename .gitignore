@@ -17,3 +17,6 @@ video/
 
 # Repo
 node_modules/
+
+# Build
+css/
