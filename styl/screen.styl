@@ -1,12 +1,12 @@
-video
-  width: 100%
-  height 400px
-  background-color: black
-
 .plugin-player
+  video
+    width: 100%
+    height 400px
+    background-color: black
+
   .navbar
     flex-direction: row
-    
+
     .play-pause
       width 60px
 
@@ -18,10 +18,14 @@ video
       text-align: right
       width 125px
 
+    .progress-bar
+      height: 100%
+
   &.playing
     .play-button
       display none
 
-  &.await
+  &.await,
+  &.pause
     .pause-button
       display none
